@@ -19,7 +19,7 @@ WHERE saldo BETWEEN 500000 AND 1000000;
 
 SELECT * FROM rekening
 WHERE saldo >= 500000 AND saldo <= 1000000;
-
+## Muhammad Irfan Abidin
 ## NOT BETWEEN
 SELECT * FROM rekening
 WHERE saldo NOT BETWEEN 500000 AND 1000000;
@@ -67,7 +67,7 @@ SELECT MIN(saldo), MAX(saldo) FROM rekening;
 SELECT SUM(saldo + 1000) FROM rekening;
 SELECT SUM(saldo) + 1000 FROM rekening;
 SELECT MAX(saldo) - MIN(saldo) FROM rekening;
-
+## Muhammad Irfan Abidin
 ## GROUP BY
 SELECT jenis_transaksi
 FROM transaksi
@@ -129,6 +129,7 @@ GROUP BY kode_cabang
 HAVING SUM(saldo) > 500000
 ORDER BY kode_cabang;
 
+## Muhammad Irfan Abidin
 ## No 5
 SELECT transaksi.tanggal, transaksi.jenis_transaksi, transaksi.jumlah
 FROM nasabah, transaksi
